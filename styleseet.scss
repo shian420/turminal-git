@@ -1,0 +1,638 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.clear {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+body{
+   background-color: black;
+   z-index: 3;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.mobile-btn{
+    display: none;
+    i{
+        padding-top: 22px;
+        padding-right: 10px;
+    }
+    p{
+        font-size: 10px;
+        padding-top: 12px;
+        padding-left: 12px;  
+    }
+}
+.mobile-btn:hover{
+background-color: rgb(45, 115, 180);
+}
+header{  
+    width: 940px;
+    position: fixed;
+        top: 0; 
+        z-index: 1;
+        display: flex;
+        background-color: black;
+    h2{
+        width: 630px;
+        margin-top: 15px;
+        margin-left: 8px;        
+    }
+    h2:hover{
+        cursor: pointer;
+    }
+    .search{ 
+        margin-left: 30px;
+        width: 330px;
+        display: flex;
+        border-radius:100px;
+        border:solid 3px rgb(51, 133, 208);
+        .search-btn{
+            border-radius:100px 0 0 100px;
+            width: 50px;
+            height: 40px;
+            background-color: black;
+            .fa-search{
+               margin-left: 13px; 
+               margin-top: 10px;
+               color:rgb(51, 133, 208);
+               
+            }
+        }
+        .search-box{
+            width: 100%;
+            height: 40px;
+            font-size: 19px;
+            background-color: rgb(43, 43, 43);
+            color: white;
+            border-radius:0 100px 100px 0;
+            border: none;
+        }
+    }
+}
+
+.chat-wrapper{
+    min-height: 100vh;
+    width: 1300px;
+    background-color: cornflowerblue;
+    margin: 0 auto;
+}
+
+.chat-container{
+    display: flex;
+}
+
+.btn{
+    border-radius: 20px;
+    background-color:rgb(51, 133, 208);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px; 
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.side-nav{
+    background-color: chocolate;
+    padding-top: 10px;
+    width: 200px;
+    height: 100vh;
+    border-right: solid 2px  rgb(22, 22, 22);
+    overflow: auto;
+    .fa-twitter{
+        margin-left: 22px;
+    }
+    li{
+        list-style: none;
+        font-weight: bold;
+        padding: 18px 5px 0 18px;
+        div{
+            width: 30px;
+            display: inline-block;
+            i{
+                width: 30px;
+                text-align: center;
+            }
+        }
+        span{
+            margin-left: 20px;
+        }
+    }
+    .large{
+        width: 200px;
+        height: 50px;
+        margin-top: 20px; 
+    }
+}
+
+.side-nav li:hover{
+    background-color: rgb(22, 22, 22);
+    color: rgb(108, 159, 206);
+    cursor: pointer;
+
+}
+.right-side{
+    display: flex;
+    width: 1100px;
+    height: 100vh;
+    background-color: rgb(0, 237, 245);
+    overflow: scroll;
+}
+main{  
+    width: 1030px;
+    height: 100vh;
+    padding-top: 36px;
+    background-color: darkkhaki;
+}
+main:hover{
+    background-color:  rgb(7, 7, 7);
+}
+
+.tw-items{
+        i{
+            height: 20px;
+            margin-right: 14px;
+            margin-top: 20px;
+            color:rgb(51, 133, 208);
+            cursor: pointer;
+        }
+    }
+.tweet{
+    float: right;
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+aside{
+    width: 130px;
+    height:100vh;
+    background-color: red;
+    padding-top: 80px;
+    h2{
+        margin-left: 10px;
+    }
+}
+.timeline-wraper{
+  display: flex;
+  margin-top: 0px;
+  border-top: solid 5px rgb(59, 59, 59);
+  cursor: pointer;   
+}
+.user-image{
+    width: 75px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.iroha{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+.timeline-flex{ 
+    padding: 13px 50px 8px 20px;
+    width: 100%;
+    
+    i{
+        margin-right: 90px;
+        margin-top: 10px;
+        color: rgb(117, 116, 116);
+    }
+    .username{
+        display: flex;
+    h3,p{
+        font-size: 16px;  
+    }
+}
+p{
+    font-size: 16px;  
+}
+}
+.user-id{
+    color: rgb(189, 186, 186);
+    margin-left: 7px;
+}
+.fa-comment:hover{
+color:rgb(51, 133, 208);
+}
+.fa-retweet:hover{
+    color:rgb(51, 208, 90);
+}
+.fa-heart:hover{
+    color: crimson;
+}
+.fa-download:hover{
+    color:rgb(51, 133, 208);
+}
+.tweet-image{
+    width: 457.2px;
+    height: 269.05px;
+    padding-top: 10px;
+    border-radius: 15px; 
+}
+.oregairu{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover; 
+
+}
+.tweet-form{
+    margin-bottom: 10px;
+    display: flex;
+    .form-right{
+        padding: 0 50px 0 20px;
+        width: 100%;
+        
+    }
+}
+form{
+    .form-icon{
+        width: 60px;
+        height: 45px;
+        margin-left: 32px; 
+        padding-top: 22px;
+        img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .tweet-textbox{
+        input[type="text"]{
+            width: 98%;
+            font-size: 18px;
+            border: none;
+            background-color: rgb(22, 22, 22);
+            color: white;
+            display: block;
+            height: 30px;
+            margin-top: 20px;
+        }
+        textarea{
+            width: 98%;
+            font-size: 18px;
+            border: none;
+            background-color: rgb(22, 22, 22);
+            color: white;
+            display: block;
+            height: 30px;
+            margin-top: 20px;
+        }
+    }
+}
+.modal-wrapper{
+    display: none;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:100;
+    background-color:rgba(134, 134, 134, 0.4);
+}
+.modal-form{
+    width: 580px;
+    height: 275px;
+    margin: 40px auto;
+    border-radius: 15px;
+}
+.modal-header-fixed{
+    width: 100%;
+    height: 55px;
+}
+.modal-header{
+    width: 580px;
+    height: 55px;
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+    border-radius: 15px 15px 0 0;
+    border-bottom: solid 2px rgb(59, 59, 59);
+    button{
+        display: none;
+        cursor: pointer;
+    }
+    p{
+        margin: 15px 27px 15px 7px;
+        font-size: 16px;
+        color:rgb(56, 142, 223);
+        font-weight: bold;
+        float: right;
+        cursor: pointer;
+    }
+    img{
+        width: 35px;
+        height: 35px;
+        margin: 7px 27px 0px 14px;
+        color:rgb(51, 133, 208);
+        cursor: pointer;
+    }
+}
+.modal-flex{
+    height: 100%;
+    display: flex;
+    background-color: black;
+}
+.modal-left{
+    width: 60px;
+    padding-left: 10px;
+    padding-top: 3px;
+    height: 85px;
+    img{
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+.modal-right{
+    textarea{
+        width: 100%;
+        height: 170px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        padding: 7px 7px 7px 0; 
+        border: none;
+        line-height: 24px;  
+    }
+    p{
+        font-size: 14px;
+        color:rgb(56, 142, 223);
+        font-weight: bold;
+        padding-left: 7px;
+        padding-bottom: 7px;
+        cursor: pointer;
+    }
+    flex: 1;
+    height: 277px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+}
+.modal-bottom{
+    padding-left: 7px;
+    border-top: solid 2px rgb(59, 59, 59);
+    i{
+        margin-right: 13px;
+        padding-top: 14px;
+        padding-bottom: 10px;
+        color:rgb(56, 142, 223);
+        cursor: pointer;
+    }
+    .modal-tweet{
+        margin-top:7px;
+        margin-bottom: 7px;
+        float: right;
+        width: 130px;
+        height: 40px;
+        border:none;
+    }
+}
+
+@media(max-width:1300px){
+    body{
+        width: 100%;
+        }
+.side-nav{
+    width: 150px;
+        .fa-twitter{
+            margin-left: 100px;
+            }
+    li{
+        div{
+            margin-left: 80px;
+        }
+        span{
+            display: none;
+        }
+    }
+    .large{
+        display: none;
+    }
+}
+main{
+    margin-left: 156px;
+}
+
+header{
+    h2{
+        width: 650px;
+        margin-left: 30px;
+        
+    }
+}
+.xx{
+    float: right;
+    width: 80px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+}
+.mobile-btn{
+    display: flex;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        background-color:rgb(51, 133, 208);
+        border-radius: 100px;
+        cursor: pointer;
+    }
+}
+aside{
+    width: 430px;
+    margin-right: 70px;
+}
+
+@media(max-width:1200px){
+.side-nav{
+    width: 80px;
+    .fa-twitter{
+        margin-left: 32px;
+    }
+    li div{
+        margin-left:12px;          
+    }   
+}
+header{
+    h2{
+            width: 617px;
+    }
+}
+main{
+    margin-left: 60px;
+}
+}
+
+@media(max-width:1100px){
+aside{
+    width: 400px;
+    margin: 0;
+} 
+header{
+    h2{
+        width: 580px; 
+    }
+    .search{
+        width: 280px;
+    }
+} 
+}
+
+@media(max-width:1000px){
+body{
+    width:750px;
+    padding-right: 0px;  
+}
+.side-nav{ 
+    li{
+        div{
+            margin-right: 70px; 
+        }    
+    }   
+}
+header{
+    .search{
+        display: none;
+        .search-box{
+            display: none;
+        }
+    }
+    h2{
+        width: 550px;
+    }
+}
+.tweet-form{
+    .form-icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 150px;
+    }
+    .form-right{
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;   
+    }
+}
+.timeline-flex{
+    padding-left: 5px;
+    padding-right: 0;
+    i{
+        margin-right: 110px;
+    }
+}
+aside{
+    display: none;
+}
+.tweet-image{
+    margin-left: 0;
+    width: 100%;
+}
+}
+
+@media(max-width:800px){
+body{
+    width: 100%;
+}
+
+}
+    
+@media(max-width:700px){
+body{
+    padding: 0;
+    width: 100%;
+}
+.chat-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.timeline-flex{
+    i{
+        margin-right: 60px;
+    }
+}
+.modal-form{
+    margin: 0;
+    width: 100%;
+}
+.modal-header{
+    width: 100%;
+    button{
+        display: inline-block;
+        width: 130px;
+        height: 35px;
+        float: right;
+        margin: 10px 25px 0px 10px;
+    }
+}
+.modal-bottom{
+    button{
+        display: none;
+    }
+}
+}
+
+@media(max-width:600px){
+    .chat-wrapper{
+        width: 100%;
+    }
+    .chat-container{
+        width: 100%;
+    }
+    .modal-header{
+        img{
+            margin-left: 20px;
+            margin-right: 0;
+        }
+    }
+main{
+    width: 100%;
+}
+
+.timeline-flex{
+    padding-right :20px;
+    i{
+        margin-right: 50px;
+    }
+}
+.tweet-image{
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+.tweet-form{
+    display: none;
+}
+}
+
+      
+    
+
